@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(30, 30, 30);
+}
+
+.calculadora {
+    background: rgb(59, 59, 59);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#resultado {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 221);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+
+.rotate-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.rotate-button:active {
+    transform: rotate(360deg);
+}
+
+.opebut {
+    background-color: rgb(0, 157, 255);
+}
+
+.DeleteVent {
+    background-color: red;
+}
+
+.redbull {
+    background-color: rgb(0, 255, 110);
+}
