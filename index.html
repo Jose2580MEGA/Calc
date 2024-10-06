@@ -1,32 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Básica UNICORDOBA</title>
+    <title>Calculadora Básica</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-</head>
-<body>
+    <body>
+
+    
+    <div class="encabezado">
+        <div class="texto"> 
+        <h1> Calculadora</h1> 
+        </div>
     <div class="calculadora">
         <input type="text" id="resultado" disabled>
         <div class="botones">
             <button onclick="limpiar()" class="DeleteVent">C</button>
-            <button onclick="agregarCaracter('/')" class="opebut">/</button>
-            <button onclick="agregarCaracter('*')"class="opebut">*</button>
-            <button onclick="agregarCaracter('-')" class="opebut">-</button>
+            <button onclick="limpiarTodo()" class="DeleteVent">AC</button>
+            <button onclick="Agregar('/')" class="opebut">/</button>
+            
+            <button onclick="Agregar('*')"class="opebut">*</button>
+        
             <button onclick="captura('7')">7</button>
             <button onclick="captura('8')">8</button>
             <button onclick="captura('9')">9</button>
-            <button onclick="agregarCaracter('+')" class="opebut">+</button>
+            <button onclick="Agregar('-')" class="opebut">-</button>
+        
             <button onclick="captura('4')">4</button>
             <button onclick="captura('5')">5</button>
-            <button onclick="captura('6')">6</button>
-            <button onclick="calcular()" class="redbull">=</button>
+            <button onclick="captura('6')">6</button> 
+            <button onclick="Agregar('+')" class="opebut">+</button>
             <button onclick="captura('1')">1</button>
             <button onclick="captura('2')">2</button>
             <button onclick="captura('3')">3</button>
+            <button onclick="calcular()" class="redbull">=</button>
+            <div></div>
             <button onclick="captura('0')">0</button>
         </div>
     </div>
